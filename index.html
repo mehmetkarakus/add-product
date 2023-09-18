@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <h1>New product</h1>
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            <section class="product">
+                <div class="product__new">
+                    <button id="myBtn" class="product__button" placeholder="Yeni Ürün">Yeni Ürün</button>
+
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <div class="close__btn">
+                                <span class="close">&times;</span>
+                            </div>
+
+                            <div class="form">
+                                <form action="">
+                                    <div class="box1">
+                                        <div class="form__box">
+                                            <label for="">Marka</label>
+                                            <input type="text" id="text__brand" placeholder="Marka">
+                                        </div>
+                                        <div class="form__box">
+                                            <label for="">Model</label>
+                                            <input type="text" id="text__model" placeholder="Model">
+                                        </div>
+                                    </div>
+
+                                    <div class="box2">
+                                        <div class="form__box">
+                                            <label for="">Fiyat</label>
+                                            <input type="text" id="text__price" placeholder="Fiyat">
+                                        </div>
+                                        <div class="form__box">
+                                            <label for="">Adet</label>
+                                            <input type="text" id="text__piece" placeholder="Adet">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="button">
+                                <button class="new__button" id="add__button">Ekle</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product__table">
+                    <table id=new__table>
+                        <thead>
+                            <tr>
+                                <th>Marka</th>
+                                <th>Model</th>
+                                <th>Fiyat</th>
+                                <th>Adet</th>
+                            </tr>
+                        </thead>
+                        <tbody id="add__table"></tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
